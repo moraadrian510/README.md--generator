@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./generateMarkdown');
 
 
 
@@ -10,7 +11,7 @@ inquirer
         {
             type: 'input',
             message: 'what is the name of your project?',
-            name: 'projectTitle',
+            name: 'Title',
             // validation prperty for user title input.
             validate: (value) => {if (value){return true} else {return 'write project title to continue' }}
         },
@@ -47,7 +48,7 @@ inquirer
         {
             type: 'input',
             message: 'what tech did you use to create your project?',
-            name: 'built with',
+            name: 'built',
             validate: (value) => {if (value){return true} else {return 'list examples - html, JavaScript ect' }}
         },
         {
@@ -62,7 +63,17 @@ inquirer
             name: 'git',
             validate: (value) => {if (value){return true} else {return 'list GitHub  username' }}
         }
-    ]).then((data))
+    ]).then(({
+        title,
+        description,
+        installation,
+        usage,
+        license,
+        credits,
+        built,
+        email,
+        git
+    })) 
     
 // TODO: Create a function to write README file
 
