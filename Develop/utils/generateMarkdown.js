@@ -11,6 +11,8 @@ function getLicenseBadge(license) {
       return '[![License: Unlicense](https://img.shields.io/badge/License-GPL-yellow.svg)](http://unlicense.org/)'
     case 'GNU':
       return '[![License: GNU](https://img.shields.io/badge/License-GNU-red.svg)](http://unlicense.org/)'
+      default:
+        return 'lisence type not found err'
   }
 }
 
