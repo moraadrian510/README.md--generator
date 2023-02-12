@@ -31,13 +31,20 @@ inquirer
             validate: (value) => {if (value){return true} else {return 'list instructions to continue' }}
         },
         {
-            type: 'list',
+            type: 'input',
             message: 'List your collaborators, if any',
             name: 'credits',
-            
+            validate: (value) => {if (value){return true} else {return 'list collaborators to continue' }}
+        },
+        {
+            type: 'input',
+            message: 'what tech did you use to create your project?',
+            name: 'built with',
+            validate: (value) => {if (value){return true} else {return 'list examples - html, JavaScript ect' }}
         }
     ]);
 // TODO: Create a function to write README file
+
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
