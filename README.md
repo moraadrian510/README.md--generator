@@ -2,7 +2,7 @@
 
 ## Description
 
-- As a new developer you already have enough on your plate.
+- As a developer you already have enough on your plate.
 - I wanted to make this journey a bit more pleasant by creating this README generator.
 - I build this project for developers who like me spend hours creating amazing programs and could use an extra tool in our tool library to ease work load.
 - This generator will automatically create your projects README with just a few text inputs  saving you precious time  that can be used  to focus on the more important tasks.
