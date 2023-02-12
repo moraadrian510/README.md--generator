@@ -2,13 +2,15 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
+
+
 // TODO: Create an array of questions for user input
 inquirer
     .Prompt([
         {
             type: 'input',
             message: 'what is the name of your project?',
-            name: 'project title',
+            name: 'projectTitle',
             // validation prperty for user title input.
             validate: (value) => {if (value){return true} else {return 'write project title to continue' }}
         },
@@ -31,8 +33,14 @@ inquirer
             validate: (value) => {if (value){return true} else {return 'list instructions to continue' }}
         },
         {
+            type: 'list',
+            message: 'what license will you be using?',
+            name: 'license',
+            choices: ['MIT license', 'GPL license', 'Apache license', 'GNU license', 'N/A']
+        },
+        {
             type: 'input',
-            message: 'List your collaborators, if any',
+            message: 'List your collaborators',
             name: 'credits',
             validate: (value) => {if (value){return true} else {return 'list collaborators to continue' }}
         },
@@ -41,8 +49,21 @@ inquirer
             message: 'what tech did you use to create your project?',
             name: 'built with',
             validate: (value) => {if (value){return true} else {return 'list examples - html, JavaScript ect' }}
+        },
+        {
+            type: 'input',
+            message: 'what is your E-mail address',
+            name: 'email',
+            validate: (value) => {if (value){return true} else {return 'list contact email' }}
+        },
+        {
+            type: 'input',
+            message: 'what is your GitHub username',
+            name: 'git',
+            validate: (value) => {if (value){return true} else {return 'list GitHub  username' }}
         }
-    ]);
+    ]).then((data))
+    
 // TODO: Create a function to write README file
 
 function writeToFile(fileName, data) {}
