@@ -12,7 +12,7 @@ function renderLicenseLink(license) {
   if(license === null) {
     return " ";
   } else {
-    return `https://choosealicense.com/licenses/${license}/`
+    return `https://choosealicense.com/`
   }
 }
 
