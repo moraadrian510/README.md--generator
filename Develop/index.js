@@ -37,7 +37,7 @@ inquirer
             type: 'list',
             message: 'what license will you be using?',
             name: 'license',
-            choices: ['MIT license', 'GPL license', 'Apache license', 'GNU license', 'N/A']
+            choices: ['MIT', 'GPL', 'Apache', 'GNU', 'Unlicensed']
         },
         {
             type: 'input',
