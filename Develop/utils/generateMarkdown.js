@@ -12,7 +12,7 @@ function renderLicenseLink(license) {
   if(license === null) {
     return " ";
   } else {
-    return `https://choosealicense.com/`
+    return `https://choosealicense.com/` // can use template literal to 
   }
 }
 
@@ -23,7 +23,7 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  
+
   ## Description 
 ${data.description}
 
@@ -32,6 +32,7 @@ ${data.description}
 * [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
+* [Built With](#built-with)
 * [Tests](#tests)
 * [Questions](#questions)
 
@@ -47,12 +48,15 @@ This project is licensed under the ${data.license} license.
 ## Contributing
 ${data.contributing}
 
-## Tests
+## Built With
+${data.built}
+
+## Tests 
 ${data.tests}
 
 ## Questions
 If you have any questions about this project, please contact me at ${data.questions}.
-
+Im also on GitHub ${data.git}.
 
 `;
 }

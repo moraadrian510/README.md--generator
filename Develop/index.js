@@ -29,7 +29,7 @@ inquirer
         },
         {
             type: 'input',
-            message: 'provide instructions and examples for use',
+            message: 'provide instructions of how to use your project',
             name: 'usage',
             validate: (value) => {if (value){return true} else {return 'list instructions to continue' }}
         },
@@ -41,8 +41,8 @@ inquirer
         },
         {
             type: 'input',
-            message: 'List your collaborators',
-            name: 'credits',
+            message: 'List your contributors',
+            name: 'Contributing',
             validate: (value) => {if (value){return true} else {return 'list collaborators to continue' }}
         },
         {
@@ -54,7 +54,7 @@ inquirer
         {
             type: 'input',
             message: 'what is your E-mail address',
-            name: 'email',
+            name: 'questions',
             validate: (value) => {if (value){return true} else {return 'list contact email' }}
         },
         {
