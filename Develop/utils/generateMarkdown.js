@@ -2,15 +2,15 @@
 function getLicenseBadge(license) {
   switch (license) {
     case 'Mit':
-      return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+      return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`;
     case 'Apache':
-      return '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+      return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]`;
     case 'Unlicensed':
-      return '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)'
+      return `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)]`
     case 'GPL':
-      return '[![License: Unlicense](https://img.shields.io/badge/License-GPL-yellow.svg)](http://unlicense.org/)'
+      return `[![License: Unlicense](https://img.shields.io/badge/License-GPL-yellow.svg)]`
     case 'GNU':
-      return '[![License: GNU](https://img.shields.io/badge/License-GNU-red.svg)](http://unlicense.org/)'
+      return `[![License: GNU](https://img.shields.io/badge/License-GNU-red.svg)]`
       default:
         return 'lisence type not found err'
   }
