@@ -80,7 +80,7 @@ function writeToFile(fileName, data) {
         if (err) {
             console.log(err)
         } else {
-            console.log('sucess')
+            console.log('Your README.md file has been created')
         }
     })
 }
