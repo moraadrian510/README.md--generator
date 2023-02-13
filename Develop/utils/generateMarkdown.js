@@ -75,11 +75,11 @@ ${data.built}
 ${data.tests}
 
 ## Questions
-If you have any questions about this project, please contact me at
+If you have any questions about this project, please contact me through my links.
 
-* E-mail: [](${data.questions})
+[E-mail](${data.questions})
 
-* GitHub: [](${data.git})
+[GitHub:](${data.git})
 
 `;
 }
