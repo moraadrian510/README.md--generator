@@ -27,10 +27,10 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if(license === null) {
-    return " ";
+  if(license) {
+    return `https://choosealicense.com/`;
   } else {
-    return `https://choosealicense.com/` // can use template literal to generate license???
+    return " " // can use template literal to generate license???
   }
 }
 
@@ -66,7 +66,7 @@ ${data.usage}
 This project is licensed under the ${data.license} license.
 
 ## Contributing
-${data.contributing}
+${data.contributing} //might not need this
 
 ## Built With
 ${data.built}
@@ -75,8 +75,11 @@ ${data.built}
 ${data.tests}
 
 ## Questions
-If you have any questions about this project, please contact me at ${data.questions}.
-Im also on GitHub ${data.git}.
+If you have any questions about this project, please contact me at
+
+* E-mail: ${data.questions}
+
+* GitHub: ${data.git}
 
 `;
 }
