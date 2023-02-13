@@ -77,9 +77,9 @@ ${data.tests}
 ## Questions
 If you have any questions about this project, please contact me at
 
-* E-mail: ${data.questions}
+* E-mail: [](${data.questions})
 
-* GitHub: ${data.git}
+* GitHub: [](${data.git})
 
 `;
 }
