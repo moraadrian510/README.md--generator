@@ -69,8 +69,6 @@ inquirer
     ]).then((data) => {
         const markDownData = generateMarkdown(data)
        writeToFile('README.md',markDownData);
-       console.log(markDownData);
-      
     })
 
 

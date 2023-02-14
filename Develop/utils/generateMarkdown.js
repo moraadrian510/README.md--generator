@@ -2,18 +2,18 @@
 function getLicenseBadge(license) {
 
   const licenseTypes = {
-    Mit: 'MIT',
-    Apache: 'Apache',
+    mit: 'MIT',
+    apache: 'Apache',
     unlicensed: 'Unlicensed',
-    GPL:'GPL',
-    GNU: 'GNU',
+    gpl:'GPL',
+    gnu: 'GNU',
   }
    
-  const type = licenseTypes[license];
+  const type = licenseTypes[license.toLowerCase()];
   if (!type) {
     return `Error: License type "${license}" not found`
   }
-  return `![License: ${type}](https://img.shields.io/badge/License-${type}-yellow.svg)`;
+  return `![License: ${type}](https://img.shields.io/badge/License-${type}-red.svg)`;
 }
 
 
@@ -36,6 +36,7 @@ function renderLicenseSection() {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  const licenseBadge = getLicenseBadge(data.license); //
   return `# ${data.title}
 
   ## Description 
@@ -57,6 +58,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
+${licenseBadge}
 This project is licensed under the ${data.license} license.
 
 ## Contributing
