@@ -18,15 +18,15 @@ function getLicenseBadge(license) {
 
 
 // If there is no license, return an empty string
-function renderLicenseBadge() {
+// function renderLicenseBadge() { didi not need this code
   
-}
+// }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink() {
+// function renderLicenseLink() {   //did not need this code 
   
-}
+// }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
