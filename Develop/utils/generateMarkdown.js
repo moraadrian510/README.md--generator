@@ -62,7 +62,7 @@ ${licenseBadge}
 This project is licensed under the ${data.license} license.
 
 ## Contributing
-${data.contributing} 
+${data.contributing} //might not need this
 
 ## Built With
 ${data.built}
