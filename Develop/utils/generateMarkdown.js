@@ -10,6 +10,7 @@ function getLicenseBadge(license) {
   }
    
   const type = licenseTypes[license.toLowerCase()];
+  console.log(license, type);
   if (!type) {
     return `Error: License type "${license}" not found`
   }
@@ -17,28 +18,27 @@ function getLicenseBadge(license) {
 }
 
 
-// If there is no license, return an empty string
-// function renderLicenseBadge() { didi not need this code
-  
-// }
+
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-// function renderLicenseLink() {   //did not need this code 
+function renderLicenseLink() {  
   
-// }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection() {
-  const licenseIndex = readme.indexOf('##license')//need help!!!!!!!!!!!!!!!!
-}
+// function renderLicenseSection() {
+//   const licenseIndex = readme.indexOf('##license')//need help!!!!!!!!!!!!!!!!
+// }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   const licenseBadge = getLicenseBadge(data.license); //
+  console.log(licenseBadge);
   return `# ${data.title}
-
+  ${licenseBadge}
+  
   ## Description 
 ${data.description}
 
@@ -58,7 +58,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
-${licenseBadge}
+
 This project is licensed under the ${data.license} license.
 
 ## Contributing

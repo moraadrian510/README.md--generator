@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+//  packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
@@ -40,7 +40,7 @@ inquirer
             type: 'list',
             message: 'what license will you be using?',
             name: 'license',
-            choices: ['MIT', 'GPL', 'Apache', 'GNU', 'unlicensed']
+            choices: ['MIT', 'GPL', 'Apache', 'GNU', 'Unlicensed']
         },
         {
             type: 'input',
